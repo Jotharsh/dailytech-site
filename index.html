@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dailytech.build: one small app, built and shipped every day</title>
+  <meta name="description" content="Four apps in three days, all free and open source: a Mac light controller, a site photo to PDF report app, an edge light for your Mac that follows your music, and a Windows meeting tray app.">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:title" content="dailytech.build">
+  <meta property="og:description" content="One small app, built and shipped every day, in public. Four builds so far.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/Inter-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ───────────────────────── first screen ───────────────────────── -->
+<header class="top" id="top">
+  <a class="mono" href="#top" aria-label="dailytech.build, back to top">
+    <svg viewBox="0 0 69 69" width="34" height="34" aria-hidden="true"><g fill="#f4f1ea"><rect x="40" y="0" width="9" height="9"/><rect x="40" y="10" width="9" height="9"/><rect x="10" y="20" width="9" height="9"/><rect x="20" y="20" width="9" height="9"/><rect x="30" y="20" width="9" height="9"/><rect x="40" y="20" width="9" height="9"/><rect x="0" y="30" width="9" height="9"/><rect x="40" y="30" width="9" height="9"/><rect x="0" y="40" width="9" height="9"/><rect x="40" y="40" width="9" height="9"/><rect x="0" y="50" width="9" height="9"/><rect x="40" y="50" width="9" height="9"/><rect x="10" y="60" width="9" height="9"/><rect x="20" y="60" width="9" height="9"/><rect x="30" y="60" width="9" height="9"/><rect x="40" y="60" width="9" height="9"/></g><rect x="60" y="60" width="9" height="9" fill="#ff5a1f"/></svg>
+  </a>
+  <nav aria-label="Main">
+    <a href="#work">Builds</a>
+    <a href="#how">How a day goes</a>
+    <a href="#about">About</a>
+    <a class="underlined" href="https://instagram.com/dailytech.build" rel="noopener">Follow</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="name">
+  <h1 id="name" aria-label="dailytech.build">
+    <span class="line"><span class="in">dailytech</span></span>
+    <span class="line accent"><span class="in"><span class="sq" aria-hidden="true"></span>build</span></span>
+  </h1>
+  <div class="hero-foot">
+    <p class="hero-sentence" data-hero-fade>One small app, built and shipped every day, in public. Four so far.</p>
+    <a class="btn" href="#work" data-hero-fade>See the builds</a>
+  </div>
+</section>
+
+<!-- ───────────────────────── numbers (inverted field) ───────────────────────── -->
+<section class="numbers field-ink" aria-labelledby="numbers-h">
+  <h2 id="numbers-h" data-reveal>Three days in.</h2>
+  <ul class="figures">
+    <li data-reveal><span class="num" data-count="4" aria-label="4">4</span><p>apps, for the Mac, for Windows and for the web.</p></li>
+    <li data-reveal><span class="num" data-count="3" aria-label="3">3</span><p>days to build them. All free and open source.</p></li>
+    <li data-reveal><span class="num" data-count="0" aria-label="0">0</span><p>accounts to make. Nothing is sent to me; it all stays on your device.</p></li>
+  </ul>
+</section>
+
+<!-- ───────────────────────── the work (pinned on desktop) ───────────────────────── -->
+<section class="work" id="work" aria-labelledby="work-h" style="--n:4">
+  <div class="stage">
+    <h2 id="work-h" class="work-h">Four<br>builds.</h2>
+
+    <article class="project" id="lumabar" data-i="0">
+      <div class="info" data-reveal-mobile>
+        <h3>LumaBar</h3>
+        <p class="lead">Control your smart bulbs from the Mac menu bar, over your own network. Works with WiZ, Tuya, Yeelight, LIFX, Hue and Home Assistant.</p>
+        <p class="meta">Built 21 Oct 2026. Tested on a real WiZ bulb; the other brands only against simulated bulbs.</p>
+        <p class="links"><a href="https://github.com/Jotharsh/LumaBar/releases/latest" rel="noopener">Download for Mac</a><a href="https://github.com/Jotharsh/LumaBar" rel="noopener">Source on GitHub</a></p>
+      </div>
+      <figure class="pic pic-muted" data-ui>
+        <img class="solo" src="media/lumabar.png" width="600" height="1070" alt="The LumaBar menu bar window: power, brightness, warmth and colour sliders, scenes and presets" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="project" id="sitesnap" data-i="1">
+      <div class="info" data-reveal-mobile>
+        <h3>SiteSnap</h3>
+        <p class="lead">Take photos on site, add a note to each, and share a clean PDF report. It works offline, with no account.</p>
+        <p class="meta">Built 22 Oct 2026. Tested in desktop browsers and an automated suite; not yet on many real phones.</p>
+        <p class="links"><a href="https://jotharsh.github.io/SiteSnap/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/SiteSnap" rel="noopener">Source on GitHub</a></p>
+      </div>
+      <figure class="pic pic-accent" data-ui>
+        <img class="phone a" src="media/sitesnap-visit.png" width="640" height="1385" alt="SiteSnap's visit screen: a list of photos with notes and urgent, done and fix tags" loading="lazy">
+        <img class="phone b" src="media/sitesnap-report.png" width="640" height="1385" alt="A page of the finished PDF report showing a photo and its note" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="project" id="brink" data-i="2">
+      <div class="info" data-reveal-mobile>
+        <h3>Brink</h3>
+        <p class="lead">A thin strip of light along your Mac screen&rsquo;s edges that follows the beat of your music and glows for notifications and calls.</p>
+        <p class="meta">Built 23 Oct 2026. Music reaction works on my Mac; the notification glow is experimental.</p>
+        <p class="links"><a href="https://github.com/Jotharsh/Brink" rel="noopener">Source on GitHub</a></p>
+      </div>
+      <figure class="pic pic-dark">
+        <video class="wide" src="media/brink-loop.mp4" poster="media/brink-poster.png" width="900" height="900" muted loop playsinline preload="none" aria-label="A screen with a soft coloured light along its edges, pulsing with music, then glowing blue for a notification and green for a call"></video>
+      </figure>
+    </article>
+
+    <article class="project" id="joinbar" data-i="3">
+      <div class="info" data-reveal-mobile>
+        <h3>Joinbar</h3>
+        <p class="lead">A Windows tray app: a countdown in the icon, reminders with a Join button, and a join shortcut.</p>
+        <p class="meta">Built 23 Oct 2026. Built on a Mac and not yet run on a Windows PC; it is a pre-release.</p>
+        <p class="links"><a href="https://github.com/Jotharsh/Joinbar/releases/tag/v1.0.0" rel="noopener">Download for Windows</a><a href="https://github.com/Jotharsh/Joinbar" rel="noopener">Source on GitHub</a></p>
+      </div>
+      <figure class="pic pic-ink" data-ui>
+        <img class="solo tall" src="media/joinbar-popup.png" width="800" height="1240" alt="The Joinbar window: a meeting on now with a Join button, and today's meetings below" loading="lazy">
+        <img class="toast" src="media/joinbar-toast.png" width="760" height="340" alt="A reminder pop-up saying Design review starts in 1 minute, with Join now and Snooze buttons" loading="lazy">
+      </figure>
+    </article>
+
+    <ol class="index" aria-label="The builds">
+      <li><a href="#lumabar" data-go="0"><span>LumaBar</span><span class="disc">Mac, Swift</span></a></li>
+      <li><a href="#sitesnap" data-go="1"><span>SiteSnap</span><span class="disc">Web, JavaScript</span></a></li>
+      <li><a href="#brink" data-go="2"><span>Brink</span><span class="disc">Mac, Swift</span></a></li>
+      <li><a href="#joinbar" data-go="3"><span>Joinbar</span><span class="disc">Windows, Electron</span></a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────────────────────── how a day goes ───────────────────────── -->
+<section class="how" id="how" aria-labelledby="how-h">
+  <h2 id="how-h" data-reveal>How a day goes.</h2>
+  <ol class="bar">
+    <li class="seg s1" style="--w:1"><span class="dur">An hour</span><p>First, pick an idea small enough to finish.</p></li>
+    <li class="seg s2" style="--w:5"><span class="dur">Most of the day</span><p>Then build it, start to finish, in the open.</p></li>
+    <li class="seg s3" style="--w:3"><span class="dur">A few hours</span><p>Then break it on purpose and fix what falls over.</p></li>
+    <li class="seg s4" style="--w:1"><span class="dur">An hour</span><p>Last, ship it with a README that says what is not tested.</p></li>
+  </ol>
+</section>
+
+<!-- ───────────────────────── about ───────────────────────── -->
+<section class="about" id="about" aria-labelledby="about-h">
+  <h2 id="about-h" class="sr-only">About dailytech.build</h2>
+  <div class="cols">
+    <p><strong>dailytech.build</strong> is one person building one small app a day and showing all of it. Each one starts as something I wanted and could not find, or could only find behind a payment. LumaBar came first, on <mark>21 October</mark>, for the lights on my desk. SiteSnap followed, for <mark>site engineers</mark> who need a clean report from a muddy phone. Brink and Joinbar came on the 23rd, one for the Mac and one for Windows. Everything is <mark>free and open source</mark>, and nothing needs an account. I say what I have tested and what I have not: LumaBar is proven on one real bulb, Joinbar has <mark>never run on Windows</mark>, and Brink&rsquo;s notification glow is still a guess. If one fails for you, tell me. <a class="ask" href="https://instagram.com/dailytech.build" rel="noopener"><mark class="strong">What should I build next?</mark></a></p>
+  </div>
+</section>
+
+<!-- ───────────────────────── follow ───────────────────────── -->
+<a class="cta" id="follow" href="https://instagram.com/dailytech.build" rel="noopener">
+  <h2 class="sr-only">Follow dailytech.build</h2>
+  <span class="cta-note">A new app every day, and you choose the next one.</span>
+  <svg class="cta-arrow" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><path d="M12 36 36 12M16 12h20v20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square"/></svg>
+  <span class="cta-word" aria-hidden="true">Follow</span>
+  <span class="sr-only">Follow @dailytech.build on Instagram</span>
+</a>
+</main>
+
+<!-- ───────────────────────── footer ───────────────────────── -->
+<footer class="foot field-ink" aria-label="Contact">
+  <div class="foot-top">
+    <p>Built in public by Jotharsh.</p>
+    <p>Free and open source, MIT licence.</p>
+    <a href="#top">Back to top</a>
+  </div>
+  <a class="handle" href="https://instagram.com/dailytech.build" rel="noopener">@dailytech.build</a>
+  <div class="foot-bottom">
+    <a href="https://github.com/Jotharsh" rel="noopener">GitHub</a>
+    <span>Set in Inter (SIL Open Font Licence).</span>
+    <span>2026</span>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

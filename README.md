@@ -1,5 +1,7 @@
 # dailytech.build
 
+**Live: <https://jotharsh.github.io/dailytech-site/>**
+
 The portfolio site for dailytech.build: one small app, built and shipped every day, in public. It shows the four builds so far (LumaBar, SiteSnap, Brink, Joinbar) with their real screenshots, honest test status and links.
 
 Plain HTML and CSS with [GSAP](https://gsap.com) (ScrollTrigger) and [Lenis](https://lenis.darkroom.engineering) for the motion. No framework.
@@ -34,3 +36,17 @@ Copy one `<article class="project">` block in `index.html`, change the text and 
 - Brand: ground `#0d0d0d`, ink `#f4f1ea`, accent `#ff5a1f`, set in Inter; the orange square is the dot in the name.
 
 MIT licence for the code. The screenshots show the apps in this portfolio.
+
+## Publishing
+
+The built site is served by GitHub Pages from the `gh-pages` branch (the `main` branch holds the source). To update it:
+
+```sh
+npm run build
+cd dist
+git init -q && git checkout -q -b gh-pages && touch .nojekyll
+git add -A && git commit -qm "Deploy" && git remote add origin <this repo's address>
+git push -f origin gh-pages
+```
+
+A custom domain later: add a `CNAME` file containing the domain to `public/`, rebuild and redeploy, then set the domain's DNS records as GitHub's Pages documentation describes.

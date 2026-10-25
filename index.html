@@ -2,197 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>dailytech.build: one small app, built and shipped every day</title>
   <meta name="description" content="Six apps in five days, all free and open source: a Mac light controller, a site photo to PDF report app, an edge light for your Mac that follows your music, a Windows meeting tray app, a measure-from-a-photo web app, and synced listening rooms.">
-  <meta name="theme-color" content="#0d0d0d">
   <meta property="og:title" content="dailytech.build">
   <meta property="og:description" content="One small app, built and shipped every day, in public. Six builds so far.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="fonts/Inter-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/BarlowCondensed-500.woff2" as="font" type="font/woff2" crossorigin>
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
-<!-- ───────────────────────── first screen ───────────────────────── -->
-<header class="top" id="top">
-  <a class="mono" href="#top" aria-label="dailytech.build, back to top">
-    <svg viewBox="0 0 69 69" width="34" height="34" aria-hidden="true"><g fill="#f4f1ea"><rect x="40" y="0" width="9" height="9"/><rect x="40" y="10" width="9" height="9"/><rect x="10" y="20" width="9" height="9"/><rect x="20" y="20" width="9" height="9"/><rect x="30" y="20" width="9" height="9"/><rect x="40" y="20" width="9" height="9"/><rect x="0" y="30" width="9" height="9"/><rect x="40" y="30" width="9" height="9"/><rect x="0" y="40" width="9" height="9"/><rect x="40" y="40" width="9" height="9"/><rect x="0" y="50" width="9" height="9"/><rect x="40" y="50" width="9" height="9"/><rect x="10" y="60" width="9" height="9"/><rect x="20" y="60" width="9" height="9"/><rect x="30" y="60" width="9" height="9"/><rect x="40" y="60" width="9" height="9"/></g><rect x="60" y="60" width="9" height="9" fill="#ff5a1f"/></svg>
-  </a>
-  <nav aria-label="Main">
-    <a href="#work">Builds</a>
-    <a href="#how">How a day goes</a>
-    <a href="#about">About</a>
-    <a class="underlined" href="https://instagram.com/dailytech.build" rel="noopener">Follow</a>
+<header class="nav">
+  <a class="mark" href="#top" aria-label="dailytech.build, top of page">d<i></i></a>
+  <nav class="navlinks" aria-label="Sections">
+    <a href="#top">Home</a><a href="#builds">Builds</a><a href="#numbers">Numbers</a><a href="#log">Log</a><a href="#next">Contact</a>
   </nav>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span></button>
 </header>
+<nav class="sheet" id="sheet" aria-label="Menu" hidden>
+  <a href="#top">Home</a><a href="#builds">Builds</a><a href="#numbers">Numbers</a><a href="#log">Log</a><a href="#next">Contact</a>
+</nav>
 
-<main id="main">
-<section class="hero" aria-labelledby="name">
-  <h1 id="name" aria-label="dailytech.build">
-    <span class="line"><span class="in">dailytech</span></span>
-    <span class="line accent"><span class="in"><span class="pips" aria-hidden="true"></span>build</span></span>
-  </h1>
-  <div class="hero-foot">
-    <p class="hero-sentence" data-hero-fade>One small app, built and shipped every day, in public. Six so far.</p>
-    <a class="btn" href="#work" data-hero-fade>See the builds</a>
+<main>
+<!-- ───────── hero ───────── -->
+<section class="hero" id="top">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="ribbon" id="ribbon" aria-hidden="true"></div>
+
+  <aside class="cards">
+    <div class="card cta">
+      <div class="cta-t">
+        <h2>Start<br>a build</h2>
+        <p>Tell me what to make next.</p>
+        <a class="btn" href="https://instagram.com/dailytech.build" rel="noopener">Tell me</a>
+      </div>
+      <div class="cta-i"><img src="media/cover-6.jpg" alt="" width="420" height="747"><span>Jukeroom</span></div>
+    </div>
+    <div class="card proof">
+      <p>Built in public<br>by one person</p>
+      <div class="faces" aria-hidden="true"><img src="media/cover-1.jpg" alt=""><img src="media/cover-2.jpg" alt=""><img src="media/cover-3.jpg" alt=""><img src="media/cover-4.jpg" alt=""><img src="media/cover-5.jpg" alt=""></div>
+    </div>
+  </aside>
+
+  <p class="kicker">One small app, every day</p>
+  <h1 class="word" id="word"><span class="w">DAILYTECH</span><span class="w tld">.BUILD</span></h1>
+</section>
+
+<!-- ───────── about ───────── -->
+<section class="about" id="about">
+  <div class="sec-h"><span class="ix">[01]</span><span class="t">About</span></div>
+  <p class="statement" data-r>One person, one small app a day, shown in public. Each starts as something I wanted and could not find, or could only find behind a payment. Everything is <mark>free and open source</mark>, nothing needs an account, and I say what I tested and what I did not.</p>
+</section>
+
+<div class="stack" aria-label="Built with">
+  <div class="track"><span>Swift</span><i>✦</i><span>SwiftUI</span><i>✦</i><span>JavaScript</span><i>✦</i><span>Electron</span><i>✦</i><span>WebRTC</span><i>✦</i><span>PWA</span><i>✦</i><span>Service workers</span><i>✦</i>
+    <span aria-hidden="true">Swift</span><i aria-hidden="true">✦</i><span aria-hidden="true">SwiftUI</span><i aria-hidden="true">✦</i><span aria-hidden="true">JavaScript</span><i aria-hidden="true">✦</i><span aria-hidden="true">Electron</span><i aria-hidden="true">✦</i><span aria-hidden="true">WebRTC</span><i aria-hidden="true">✦</i><span aria-hidden="true">PWA</span><i aria-hidden="true">✦</i><span aria-hidden="true">Service workers</span><i aria-hidden="true">✦</i></div>
+</div>
+
+<!-- ───────── in motion ───────── -->
+<section class="reel" aria-label="Brink in motion">
+  <div class="reel-f" data-r>
+    <video src="media/brink-loop.mp4" poster="media/brink-poster.jpg" muted loop playsinline preload="none" id="reelv" aria-label="A screen with a soft coloured light along its edges, pulsing with music, then glowing blue for a notification and green for a call"></video>
+    <p class="reel-t"><span aria-hidden="true">✧</span> IN MOTION</p>
+    <p class="reel-c">Brink: light that follows your music</p>
   </div>
 </section>
 
-<!-- ───────────────────────── numbers (inverted field) ───────────────────────── -->
-<section class="numbers field-ink" aria-labelledby="numbers-h">
-  <h2 id="numbers-h" data-reveal>Five days in.</h2>
-  <ul class="figures">
-    <li data-reveal><span class="num" data-count="6" aria-label="6">6</span><p>apps, for the Mac, for Windows and for the web.</p></li>
-    <li data-reveal><span class="num" data-count="5" aria-label="5">5</span><p>days since the first one. All free and open source.</p></li>
-    <li data-reveal><span class="num" data-count="0" aria-label="0">0</span><p>accounts to make. Nothing is sent to me; it all stays on your device.</p></li>
+<!-- ───────── builds ───────── -->
+<section class="builds" id="builds">
+  <div class="sec-h"><span class="ix">[02]</span><span class="t">Builds</span><span class="n">06</span></div>
+  <div class="list">
+    <article class="row" data-img="media/cover-1.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p1"><span class="ix">[01]</span><span class="nm">LumaBar</span><span class="tags"><b>Mac</b><b>Swift</b></span><span class="dt">21.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p1" role="region" aria-label="LumaBar"><div class="inner">
+        <div class="txt"><p class="lead">Smart bulbs from the Mac menu bar, over your own network: WiZ, Tuya, Yeelight, LIFX, Hue and Home Assistant.</p>
+          <p class="meta">Tested on a real WiZ bulb; the other brands only against simulated bulbs.</p>
+          <p class="links"><a href="https://github.com/Jotharsh/LumaBar/releases/latest" rel="noopener">Download for Mac</a><a href="https://github.com/Jotharsh/LumaBar" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/lumabar.jpg" alt="The LumaBar menu bar window with power, brightness, warmth and colour sliders" loading="lazy" width="420" height="750"><img src="media/cover-1.jpg" alt="" loading="lazy" width="420" height="747"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-2.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p2"><span class="ix">[02]</span><span class="nm">SiteSnap</span><span class="tags"><b>Web</b><b>Offline</b></span><span class="dt">22.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p2" role="region" aria-label="SiteSnap"><div class="inner">
+        <div class="txt"><p class="lead">Take photos on site, add a note to each, and share a clean PDF report. Works offline, no account.</p>
+          <p class="meta">Tested in desktop browsers and an automated suite; not yet on many real phones.</p>
+          <p class="links"><a href="https://jotharsh.github.io/SiteSnap/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/SiteSnap" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/sitesnap-visit.jpg" alt="SiteSnap's visit screen: a list of photos with notes and tags" loading="lazy" width="420" height="909"><img src="media/sitesnap-report.jpg" alt="A page of the finished PDF report" loading="lazy" width="420" height="909"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-3.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p3"><span class="ix">[03]</span><span class="nm">Brink</span><span class="tags"><b>Mac</b><b>Swift</b></span><span class="dt">23.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p3" role="region" aria-label="Brink"><div class="inner">
+        <div class="txt"><p class="lead">A thin strip of light along your Mac screen&rsquo;s edges that follows the beat of your music and glows for notifications and calls.</p>
+          <p class="meta">Music reaction works on my Mac; the notification glow is experimental.</p>
+          <p class="links"><a href="https://github.com/Jotharsh/Brink" rel="noopener">Source</a></p></div>
+        <div class="imgs one"><img src="media/brink-poster.jpg" alt="A screen with soft coloured light along its edges" loading="lazy" width="1000" height="1000"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-4.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p4"><span class="ix">[04]</span><span class="nm">Joinbar</span><span class="tags"><b>Windows</b><b>Electron</b></span><span class="dt">23.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p4" role="region" aria-label="Joinbar"><div class="inner">
+        <div class="txt"><p class="lead">A Windows tray app: a countdown in the icon, reminders with a Join button, and a join shortcut.</p>
+          <p class="meta">Built on a Mac and not yet run on a Windows PC; it is a pre-release.</p>
+          <p class="links"><a href="https://github.com/Jotharsh/Joinbar/releases/tag/v1.0.0" rel="noopener">Download for Windows</a><a href="https://github.com/Jotharsh/Joinbar" rel="noopener">Source</a></p></div>
+        <div class="imgs one"><img src="media/joinbar-popup.jpg" alt="The Joinbar window: a meeting on now with a Join button" loading="lazy" width="420" height="651"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-5.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p5"><span class="ix">[05]</span><span class="nm">Tapeshot</span><span class="tags"><b>Web</b><b>Offline</b></span><span class="dt">25.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p5" role="region" aria-label="Tapeshot"><div class="inner">
+        <div class="txt"><p class="lead">Measure anything from a photo: put paper or a card next to it, mark the corners, tap the two ends.</p>
+          <p class="meta">Checked on made-up photos with known answers and on one real phone. Only measures flat things.</p>
+          <p class="links"><a href="https://jotharsh.github.io/Tapeshot/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/Tapeshot" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/tapeshot-measure.jpg" alt="Tapeshot with a sheet of paper marked by four corners and a line measured across a book" loading="lazy" width="420" height="909"><img src="media/tapeshot-grid.jpg" alt="The same photo with a measuring grid over the table" loading="lazy" width="420" height="909"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-6.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p6"><span class="ix">[06]</span><span class="nm">Jukeroom</span><span class="tags"><b>Web</b><b>WebRTC</b></span><span class="dt">25.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p6" role="region" aria-label="Jukeroom"><div class="inner">
+        <div class="txt"><p class="lead">Listen to YouTube songs together, in sync. Start a room, share the code, add to one queue. Phones and laptops.</p>
+          <p class="meta">The room lives in the host&rsquo;s browser and ends when they close it. Some mobile networks cannot connect.</p>
+          <p class="links"><a href="https://jotharsh.github.io/Jukeroom/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/Jukeroom" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/jukeroom-room.jpg" alt="Jukeroom on a phone: a song playing on a turntable with a timer and controls" loading="lazy" width="420" height="909"><img src="media/jukeroom-second.jpg" alt="A second phone in the same room at the same moment" loading="lazy" width="420" height="909"></div>
+      </div></div>
+    </article>
+  </div>
+</section>
+
+<!-- ───────── numbers ───────── -->
+<section class="numbers" id="numbers">
+  <div class="sec-h"><span class="ix">[03]</span><span class="t">Numbers</span></div>
+  <ul class="figs">
+    <li data-r><span class="big" data-count="6">6</span><p class="cap">Apps</p><p class="sub">For the Mac, for Windows and for the web.</p></li>
+    <li data-r><span class="big" data-count="5">5</span><p class="cap">Days</p><p class="sub">Since the first one. All free and open source.</p></li>
+    <li data-r><span class="big" data-count="0">0</span><p class="cap">Accounts</p><p class="sub">Nothing is sent to me; it all stays on your device.</p></li>
   </ul>
-  <ol class="days" aria-label="What was built each day, from the commit history">
-    <li data-reveal><span class="d">21 Oct</span><span class="pips" aria-hidden="true"><i></i></span><p>LumaBar</p></li>
-    <li data-reveal><span class="d">22 Oct</span><span class="pips" aria-hidden="true"><i></i></span><p>SiteSnap</p></li>
-    <li data-reveal><span class="d">23 Oct</span><span class="pips" aria-hidden="true"><i></i><i></i></span><p>Brink, Joinbar</p></li>
-    <li class="rest" data-reveal><span class="d">24 Oct</span><span class="pips" aria-hidden="true"><i></i></span><p>No new app</p></li>
-    <li data-reveal><span class="d">25 Oct</span><span class="pips" aria-hidden="true"><i></i><i></i></span><p>Tapeshot, Jukeroom</p></li>
+</section>
+
+<!-- ───────── shipped ───────── -->
+<section class="logs" id="log">
+  <div class="sec-h"><span class="ix">[04]</span><span class="t">Shipped</span></div>
+  <h2 class="five" data-r>Five days,<br>six apps.</h2>
+  <ol class="shipped" aria-label="The six builds and the date each was first committed">
+    <li data-r><span class="d">21.10</span><span class="n">LumaBar</span><span class="k">Mac</span></li>
+    <li data-r><span class="d">22.10</span><span class="n">SiteSnap</span><span class="k">Web</span></li>
+    <li data-r><span class="d">23.10</span><span class="n">Brink</span><span class="k">Mac</span></li>
+    <li data-r><span class="d">23.10</span><span class="n">Joinbar</span><span class="k">Windows</span></li>
+    <li data-r><span class="d">25.10</span><span class="n">Tapeshot</span><span class="k">Web</span></li>
+    <li data-r><span class="d">25.10</span><span class="n">Jukeroom</span><span class="k">Web</span></li>
   </ol>
 </section>
 
-<!-- ───────────────────────── the work (pinned on desktop) ───────────────────────── -->
-<section class="work" id="work" aria-labelledby="work-h" style="--n:6">
-  <div class="stage">
-    <h2 id="work-h" class="work-h">Six<br> builds.</h2>
-
-    <article class="project" id="lumabar" data-i="0">
-      <div class="info" data-reveal-mobile>
-        <h3>LumaBar</h3>
-        <p class="lead">Smart bulbs from the Mac menu bar, over your own network: WiZ, Tuya, Yeelight, LIFX, Hue and Home Assistant.</p>
-        <p class="meta">Built 21 Oct 2026. Tested on a real WiZ bulb; the other brands only against simulated bulbs.</p>
-        <p class="links"><a href="https://github.com/Jotharsh/LumaBar/releases/latest" rel="noopener">Download for Mac</a><a href="https://github.com/Jotharsh/LumaBar" rel="noopener">Source on GitHub</a></p>
-      </div>
-      <figure class="pic pic-muted" data-ui>
-        <img class="solo" src="media/lumabar.png" width="600" height="1070" alt="The LumaBar menu bar window: power, brightness, warmth and colour sliders, scenes and presets" loading="lazy">
-      </figure>
-    </article>
-
-    <article class="project" id="sitesnap" data-i="1">
-      <div class="info" data-reveal-mobile>
-        <h3>SiteSnap</h3>
-        <p class="lead">Take photos on site, add a note to each, and share a clean PDF report. It works offline, with no account.</p>
-        <p class="meta">Built 22 Oct 2026. Tested in desktop browsers and an automated suite; not yet on many real phones.</p>
-        <p class="links"><a href="https://jotharsh.github.io/SiteSnap/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/SiteSnap" rel="noopener">Source on GitHub</a></p>
-      </div>
-      <figure class="pic pic-accent" data-ui>
-        <img class="phone a" src="media/sitesnap-visit.png" width="640" height="1385" alt="SiteSnap's visit screen: a list of photos with notes and urgent, done and fix tags" loading="lazy">
-        <img class="phone b" src="media/sitesnap-report.png" width="640" height="1385" alt="A page of the finished PDF report showing a photo and its note" loading="lazy">
-      </figure>
-    </article>
-
-    <article class="project" id="brink" data-i="2">
-      <div class="info" data-reveal-mobile>
-        <h3>Brink</h3>
-        <p class="lead">A thin strip of light along your Mac screen&rsquo;s edges that follows the beat of your music and glows for notifications and calls.</p>
-        <p class="meta">Built 23 Oct 2026. Music reaction works on my Mac; the notification glow is experimental.</p>
-        <p class="links"><a href="https://github.com/Jotharsh/Brink" rel="noopener">Source on GitHub</a></p>
-      </div>
-      <figure class="pic pic-dark">
-        <video class="wide" src="media/brink-loop.mp4" poster="media/brink-poster.png" width="900" height="900" muted loop playsinline preload="none" aria-label="A screen with a soft coloured light along its edges, pulsing with music, then glowing blue for a notification and green for a call"></video>
-      </figure>
-    </article>
-
-    <article class="project" id="joinbar" data-i="3">
-      <div class="info" data-reveal-mobile>
-        <h3>Joinbar</h3>
-        <p class="lead">A Windows tray app: a countdown in the icon, reminders with a Join button, and a join shortcut.</p>
-        <p class="meta">Built 23 Oct 2026. Built on a Mac and not yet run on a Windows PC; it is a pre-release.</p>
-        <p class="links"><a href="https://github.com/Jotharsh/Joinbar/releases/tag/v1.0.0" rel="noopener">Download for Windows</a><a href="https://github.com/Jotharsh/Joinbar" rel="noopener">Source on GitHub</a></p>
-      </div>
-      <figure class="pic pic-ink" data-ui>
-        <img class="solo tall" src="media/joinbar-popup.png" width="800" height="1240" alt="The Joinbar window: a meeting on now with a Join button, and today's meetings below" loading="lazy">
-        <img class="toast" src="media/joinbar-toast.png" width="760" height="340" alt="A reminder pop-up saying Design review starts in 1 minute, with Join now and Snooze buttons" loading="lazy">
-      </figure>
-    </article>
-
-    <article class="project" id="tapeshot" data-i="4">
-      <div class="info" data-reveal-mobile>
-        <h3>Tapeshot</h3>
-        <p class="lead">Measure anything from a photo: put paper or a card next to it, mark the corners, tap the two ends.</p>
-        <p class="meta">Built 25 Oct 2026. Checked on made-up photos with known answers and on one real phone. Only measures flat things.</p>
-        <p class="links"><a href="https://jotharsh.github.io/Tapeshot/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/Tapeshot" rel="noopener">Source on GitHub</a></p>
-      </div>
-      <figure class="pic pic-muted" data-ui>
-        <img class="phone a" src="media/tapeshot-measure.png" width="640" height="1385" alt="Tapeshot with a sheet of paper marked by four corners and a line measured across a book, reading 17.9 cm" loading="lazy">
-        <img class="phone b" src="media/tapeshot-grid.png" width="640" height="1385" alt="The same photo with a measuring grid laid over the table" loading="lazy">
-      </figure>
-    </article>
-
-    <article class="project" id="jukeroom" data-i="5">
-      <div class="info" data-reveal-mobile>
-        <h3>Jukeroom</h3>
-        <p class="lead">Listen to YouTube songs together, in sync. Start a room, share the code, add to one queue. Phones and laptops.</p>
-        <p class="meta">Built 25 Oct 2026. The room lives in the host&rsquo;s browser and ends when they close it. Some mobile networks cannot connect.</p>
-        <p class="links"><a href="https://jotharsh.github.io/Jukeroom/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/Jukeroom" rel="noopener">Source on GitHub</a></p>
-      </div>
-      <figure class="pic pic-dark" data-ui>
-        <img class="phone a" src="media/jukeroom-room.png" width="640" height="1385" alt="Jukeroom on a phone: a song playing on a turntable with a timer, a sync light and play, next and volume controls" loading="lazy">
-        <img class="phone b" src="media/jukeroom-second.png" width="640" height="1385" alt="A second phone in the same room, at the same moment of the song" loading="lazy">
-      </figure>
-    </article>
-
-    <ol class="index" aria-label="The builds">
-      <li><a href="#lumabar" data-go="0"><span>LumaBar</span><span class="disc">Mac, Swift</span></a></li>
-      <li><a href="#sitesnap" data-go="1"><span>SiteSnap</span><span class="disc">Web, JavaScript</span></a></li>
-      <li><a href="#brink" data-go="2"><span>Brink</span><span class="disc">Mac, Swift</span></a></li>
-      <li><a href="#joinbar" data-go="3"><span>Joinbar</span><span class="disc">Windows, Electron</span></a></li>
-      <li><a href="#tapeshot" data-go="4"><span>Tapeshot</span><span class="disc">Web, JavaScript</span></a></li>
-      <li><a href="#jukeroom" data-go="5"><span>Jukeroom</span><span class="disc">Web, WebRTC</span></a></li>
-    </ol>
-  </div>
+<!-- ───────── next ───────── -->
+<section class="next" id="next">
+  <div class="sec-h"><span class="ix">[05]</span><span class="t">Contact</span></div>
+  <a class="ask" href="https://instagram.com/dailytech.build" rel="noopener" data-r><span>What should I build next?</span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18L18 6M8 6h10v10"/></svg></a>
+  <ul class="foot">
+    <li><a href="https://instagram.com/dailytech.build" rel="noopener">Instagram</a></li>
+    <li><a href="https://github.com/Jotharsh" rel="noopener">GitHub</a></li>
+    <li><span>One small app, every day.</span></li>
+  </ul>
 </section>
-
-<!-- ───────────────────────── how a day goes ───────────────────────── -->
-<section class="how" id="how" aria-labelledby="how-h">
-  <h2 id="how-h" data-reveal>How a day goes.</h2>
-  <ol class="bar">
-    <li class="seg s1" style="--w:1"><span class="dur">An hour</span><p>First, pick an idea small enough to finish.</p></li>
-    <li class="seg s2" style="--w:5"><span class="dur">Most of the day</span><p>Then build it, start to finish, in the open.</p></li>
-    <li class="seg s3" style="--w:3"><span class="dur">A few hours</span><p>Then break it on purpose and fix what falls over.</p></li>
-    <li class="seg s4" style="--w:1"><span class="dur">An hour</span><p>Last, ship it with a README that says what is not tested.</p></li>
-  </ol>
-</section>
-
-<!-- ───────────────────────── about ───────────────────────── -->
-<section class="about" id="about" aria-labelledby="about-h">
-  <h2 id="about-h" class="sr-only">About dailytech.build</h2>
-  <div class="cols">
-    <p><strong>dailytech.build</strong> is one person building one small app a day and showing all of it. Each one starts as something I wanted and could not find, or could only find behind a payment. LumaBar came first, on <mark>21 October</mark>, for the lights on my desk. SiteSnap followed, for <mark>site engineers</mark> who need a clean report from a muddy phone. Brink and Joinbar came on the 23rd, one for the Mac and one for Windows. On the 25th came Tapeshot, which measures things from a photo, and Jukeroom, where friends listen to the same song together. Everything is <mark>free and open source</mark>, and nothing needs an account. I say what I have tested and what I have not: LumaBar is proven on one real bulb, Joinbar has <mark>never run on Windows</mark>, and Brink&rsquo;s notification glow is still a guess. If one fails for you, tell me. <a class="ask" href="https://instagram.com/dailytech.build" rel="noopener"><mark class="strong">What should I build next?</mark></a></p>
-  </div>
-</section>
-
-<!-- ───────────────────────── follow ───────────────────────── -->
-<a class="cta" id="follow" href="https://instagram.com/dailytech.build" rel="noopener">
-  <h2 class="sr-only">Follow dailytech.build</h2>
-  <span class="cta-note">A new app every day, and you choose the next one.</span>
-  <svg class="cta-arrow" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><path d="M12 36 36 12M16 12h20v20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square"/></svg>
-  <span class="cta-word" aria-hidden="true">Follow</span>
-  <span class="sr-only">Follow @dailytech.build on Instagram</span>
-</a>
 </main>
 
-<!-- ───────────────────────── footer ───────────────────────── -->
-<footer class="foot field-ink" aria-label="Contact">
-  <div class="foot-top">
-    <p>Built in public by Jotharsh.</p>
-    <p>Free and open source, MIT licence.</p>
-    <a href="#top">Back to top</a>
-  </div>
-  <a class="handle" href="https://instagram.com/dailytech.build" rel="noopener">@dailytech.build</a>
-  <div class="foot-bottom">
-    <a href="https://github.com/Jotharsh" rel="noopener">GitHub</a>
-    <span>Set in Inter (SIL Open Font Licence).</span>
-    <span>2026</span>
-  </div>
-</footer>
-
+<div class="peek" id="peek" aria-hidden="true"><img alt="" src=""></div>
 <script type="module" src="/src/main.js"></script>
 </body>
 </html>

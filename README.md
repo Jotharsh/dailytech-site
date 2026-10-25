@@ -2,9 +2,9 @@
 
 **Live: <https://jotharsh.github.io/dailytech-site/>**
 
-The portfolio site for dailytech.build: one small app, built and shipped every day, in public. It shows the six builds so far (LumaBar, SiteSnap, Brink, Joinbar, Tapeshot, Jukeroom) with their real screenshots, honest test status and links.
+The portfolio site for dailytech.build: one small app, built and shipped every day, in public. It shows the six builds so far (LumaBar, SiteSnap, Brink, Joinbar, Tapeshot, Jukeroom) with real screenshots, honest test status and links. Large condensed type, a twisting ribbon of app screenshots, and an accordion list of builds. Vanilla JS, Vite and Lenis.
 
-Plain HTML and CSS with [GSAP](https://gsap.com) (ScrollTrigger) and [Lenis](https://lenis.darkroom.engineering) for the motion. No framework.
+Plain HTML, CSS and JavaScript with [Lenis](https://lenis.darkroom.engineering) for smooth scrolling. No framework. Fonts: Barlow Condensed, Space Mono and Inter (open licences).
 
 ## Run it
 

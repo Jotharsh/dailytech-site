@@ -63,6 +63,20 @@ h1, h2, h3 { font-weight: 600; letter-spacing: -.045em; line-height: .95; text-w
 .btn:active { transform: translateY(2px); }
 
 /* ───────── numbers ───────── */
+.days { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid currentColor; }
+.days li { padding: 20px 16px 0 0; display: grid; gap: 10px; align-content: start; }
+.days .d { font-size: var(--t-small); letter-spacing: .08em; text-transform: uppercase; opacity: .65; }
+.days .pips { display: flex; gap: 6px; height: 22px; justify-self: start; }
+.days .pips i { flex: none; width: 22px; height: 22px; background: var(--accent); }
+.days p { font-size: var(--t-body); font-weight: 600; letter-spacing: -.01em; }
+.days .rest .pips i { background: none; outline: 1.5px dashed currentColor; outline-offset: -1.5px; opacity: .4; }
+.days .rest p { font-weight: 400; opacity: .6; }
+@media (max-width: 700px) {
+  .days { grid-template-columns: 1fr; }
+  .days li { grid-template-columns: 5.5em auto 1fr; align-items: center; padding: 14px 0; border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
+  .days .pips { height: 18px; } .days .pips i { width: 18px; height: 18px; }
+}
+
 .numbers { padding: var(--gap) var(--m); min-height: 90svh; display: flex; flex-direction: column; justify-content: space-between; gap: 80px; }
 .numbers h2 { font-size: var(--t-h2); }
 .figures { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--m); align-items: end; }

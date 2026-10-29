@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>dailytech.build: one small app, built and shipped every day</title>
+  <meta name="description" content="Eight apps in nine days, all free and open source: a Mac light controller, a site photo to PDF report app, an edge light for your Mac that follows your music, a Windows meeting tray app, a measure-from-a-photo web app, synced listening rooms, a team word game, and a Mac app that saves your window layout as a room.">
+  <meta property="og:title" content="dailytech.build">
+  <meta property="og:description" content="One small app, built and shipped every day, in public. Eight builds so far.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/BarlowCondensed-500.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="module" crossorigin src="./assets/index-w97_r7_D.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DYIXWlCI.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="mark" href="#top" aria-label="dailytech.build, top of page">d<i></i></a>
+  <nav class="navlinks" aria-label="Sections">
+    <a href="#top">Home</a><a href="#builds">Builds</a><a href="#numbers">Numbers</a><a href="#log">Log</a><a href="#next">Contact</a>
+  </nav>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span></button>
+</header>
+<nav class="sheet" id="sheet" aria-label="Menu" hidden>
+  <a href="#top">Home</a><a href="#builds">Builds</a><a href="#numbers">Numbers</a><a href="#log">Log</a><a href="#next">Contact</a>
+</nav>
+
+<main>
+<!-- ───────── hero ───────── -->
+<section class="hero" id="top">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="ribbon" id="ribbon" aria-hidden="true"></div>
+
+  <aside class="cards">
+    <div class="card cta">
+      <div class="cta-t">
+        <h2>Start<br>a build</h2>
+        <p>Tell me what to make next.</p>
+        <a class="btn" href="https://instagram.com/dailytech.build" rel="noopener">Tell me</a>
+      </div>
+      <div class="cta-i"><img src="media/cover-6.jpg" alt="" width="420" height="747"><span>Jukeroom</span></div>
+    </div>
+    <div class="card proof">
+      <p>Built in public<br>by one person</p>
+      <div class="faces" aria-hidden="true"><img src="media/cover-1.jpg" alt=""><img src="media/cover-2.jpg" alt=""><img src="media/cover-3.jpg" alt=""><img src="media/cover-4.jpg" alt=""><img src="media/cover-5.jpg" alt=""></div>
+    </div>
+  </aside>
+
+  <p class="kicker">One small app, every day</p>
+  <h1 class="word" id="word"><span class="w">DAILYTECH</span><span class="w tld">.BUILD</span></h1>
+</section>
+
+<!-- ───────── about ───────── -->
+<section class="about" id="about">
+  <div class="sec-h"><span class="ix">[01]</span><span class="t">About</span></div>
+  <p class="statement" data-r>One person, one small app a day, shown in public. Each starts as something I wanted and could not find, or could only find behind a payment. Everything is <mark>free and open source</mark>, nothing needs an account, and I say what I tested and what I did not.</p>
+</section>
+
+<div class="stack" aria-label="Built with">
+  <div class="track"><span>Swift</span><i>✦</i><span>SwiftUI</span><i>✦</i><span>JavaScript</span><i>✦</i><span>Electron</span><i>✦</i><span>WebRTC</span><i>✦</i><span>PWA</span><i>✦</i><span>Service workers</span><i>✦</i>
+    <span aria-hidden="true">Swift</span><i aria-hidden="true">✦</i><span aria-hidden="true">SwiftUI</span><i aria-hidden="true">✦</i><span aria-hidden="true">JavaScript</span><i aria-hidden="true">✦</i><span aria-hidden="true">Electron</span><i aria-hidden="true">✦</i><span aria-hidden="true">WebRTC</span><i aria-hidden="true">✦</i><span aria-hidden="true">PWA</span><i aria-hidden="true">✦</i><span aria-hidden="true">Service workers</span><i aria-hidden="true">✦</i></div>
+</div>
+
+<!-- ───────── in motion ───────── -->
+<section class="reel" aria-label="Brink in motion">
+  <div class="reel-f" data-r>
+    <video src="media/brink-loop.mp4" poster="media/brink-poster.jpg" muted loop playsinline preload="none" id="reelv" aria-label="A screen with a soft coloured light along its edges, pulsing with music, then glowing blue for a notification and green for a call"></video>
+    <p class="reel-t"><span aria-hidden="true">✧</span> IN MOTION</p>
+    <p class="reel-c">Brink: light that follows your music</p>
+  </div>
+</section>
+
+<!-- ───────── builds ───────── -->
+<section class="builds" id="builds">
+  <div class="sec-h"><span class="ix">[02]</span><span class="t">Builds</span><span class="n">08</span></div>
+  <div class="list">
+    <article class="row" data-img="media/cover-1.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p1"><span class="ix">[01]</span><span class="nm">LumaBar</span><span class="tags"><b>Mac</b><b>Swift</b></span><span class="dt">21.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p1" role="region" aria-label="LumaBar"><div class="inner">
+        <div class="txt"><p class="lead">Smart bulbs from the Mac menu bar, over your own network: WiZ, Tuya, Yeelight, LIFX, Hue and Home Assistant.</p>
+          <p class="meta">Tested on a real WiZ bulb; the other brands only against simulated bulbs.</p>
+          <p class="links"><a href="https://github.com/Jotharsh/LumaBar/releases/latest" rel="noopener">Download for Mac</a><a href="https://github.com/Jotharsh/LumaBar" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/lumabar.jpg" alt="The LumaBar menu bar window with power, brightness, warmth and colour sliders" loading="lazy" width="420" height="750"><img src="media/cover-1.jpg" alt="" loading="lazy" width="420" height="747"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-2.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p2"><span class="ix">[02]</span><span class="nm">SiteSnap</span><span class="tags"><b>Web</b><b>Offline</b></span><span class="dt">22.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p2" role="region" aria-label="SiteSnap"><div class="inner">
+        <div class="txt"><p class="lead">Take photos on site, add a note to each, and share a clean PDF report. Works offline, no account.</p>
+          <p class="meta">Tested in desktop browsers and an automated suite; not yet on many real phones.</p>
+          <p class="links"><a href="https://jotharsh.github.io/SiteSnap/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/SiteSnap" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/sitesnap-visit.jpg" alt="SiteSnap's visit screen: a list of photos with notes and tags" loading="lazy" width="420" height="909"><img src="media/sitesnap-report.jpg" alt="A page of the finished PDF report" loading="lazy" width="420" height="909"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-3.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p3"><span class="ix">[03]</span><span class="nm">Brink</span><span class="tags"><b>Mac</b><b>Swift</b></span><span class="dt">23.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p3" role="region" aria-label="Brink"><div class="inner">
+        <div class="txt"><p class="lead">A thin strip of light along your Mac screen&rsquo;s edges that follows the beat of your music and glows for notifications and calls.</p>
+          <p class="meta">Music reaction works on my Mac; the notification glow is experimental.</p>
+          <p class="links"><a href="https://github.com/Jotharsh/Brink" rel="noopener">Source</a></p></div>
+        <div class="imgs one"><img src="media/brink-poster.jpg" alt="A screen with soft coloured light along its edges" loading="lazy" width="1000" height="1000"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-4.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p4"><span class="ix">[04]</span><span class="nm">Joinbar</span><span class="tags"><b>Windows</b><b>Electron</b></span><span class="dt">23.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p4" role="region" aria-label="Joinbar"><div class="inner">
+        <div class="txt"><p class="lead">A Windows tray app: a countdown in the icon, reminders with a Join button, and a join shortcut.</p>
+          <p class="meta">Built on a Mac and not yet run on a Windows PC; it is a pre-release.</p>
+          <p class="links"><a href="https://github.com/Jotharsh/Joinbar/releases/tag/v1.0.0" rel="noopener">Download for Windows</a><a href="https://github.com/Jotharsh/Joinbar" rel="noopener">Source</a></p></div>
+        <div class="imgs one"><img src="media/joinbar-popup.jpg" alt="The Joinbar window: a meeting on now with a Join button" loading="lazy" width="420" height="651"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-5.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p5"><span class="ix">[05]</span><span class="nm">Tapeshot</span><span class="tags"><b>Web</b><b>Offline</b></span><span class="dt">25.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p5" role="region" aria-label="Tapeshot"><div class="inner">
+        <div class="txt"><p class="lead">Measure anything from a photo: put paper or a card next to it, mark the corners, tap the two ends.</p>
+          <p class="meta">Checked on made-up photos with known answers and on one real phone. Only measures flat things.</p>
+          <p class="links"><a href="https://jotharsh.github.io/Tapeshot/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/Tapeshot" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/tapeshot-measure.jpg" alt="Tapeshot with a sheet of paper marked by four corners and a line measured across a book" loading="lazy" width="420" height="909"><img src="media/tapeshot-grid.jpg" alt="The same photo with a measuring grid over the table" loading="lazy" width="420" height="909"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-6.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p6"><span class="ix">[06]</span><span class="nm">Jukeroom</span><span class="tags"><b>Web</b><b>WebRTC</b></span><span class="dt">25.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p6" role="region" aria-label="Jukeroom"><div class="inner">
+        <div class="txt"><p class="lead">Listen to YouTube songs together, in sync. Start a room, share the code, add to one queue. Phones and laptops.</p>
+          <p class="meta">The room lives in the host&rsquo;s browser and ends when they close it. Some mobile networks cannot connect.</p>
+          <p class="links"><a href="https://jotharsh.github.io/Jukeroom/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/Jukeroom" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/jukeroom-room.jpg" alt="Jukeroom on a phone: a song playing on a turntable with a timer and controls" loading="lazy" width="420" height="909"><img src="media/jukeroom-second.jpg" alt="A second phone in the same room at the same moment" loading="lazy" width="420" height="909"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-7.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p7"><span class="ix">[07]</span><span class="nm">Hushwords</span><span class="tags"><b>Web</b><b>WebRTC</b></span><span class="dt">25.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p7" role="region" aria-label="Hushwords"><div class="inner">
+        <div class="txt"><p class="lead">A team word game for friends. Whisper one clue, find your agents, avoid the assassin. Phones and laptops.</p>
+          <p class="meta">The room lives in the host&rsquo;s browser and ends when they close it. Tested with four real browsers; not yet on many real phones.</p>
+          <p class="links"><a href="https://jotharsh.github.io/Hushwords/" rel="noopener">Open the app</a><a href="https://github.com/Jotharsh/Hushwords" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/hushwords-spy.jpg" alt="Hushwords as the spymaster sees it: cards tinted red, blue, beige and dark to show who owns them" loading="lazy" width="420" height="909"><img src="media/hushwords-win.jpg" alt="Red team wins, with confetti over the revealed board" loading="lazy" width="420" height="909"></div>
+      </div></div>
+    </article>
+    <article class="row" data-img="media/cover-8.jpg">
+      <button class="row-h" aria-expanded="false" aria-controls="p8"><span class="ix">[08]</span><span class="nm">Tether</span><span class="tags"><b>Mac</b><b>Swift</b></span><span class="dt">29.10</span><span class="plus" aria-hidden="true"></span></button>
+      <div class="row-p" id="p8" role="region" aria-label="Tether"><div class="inner">
+        <div class="txt"><p class="lead">Save your window layout as a room: set your windows up, tap Save this room, and when the mess returns, one click on Restore puts every window back.</p>
+          <p class="meta">Works with apps that are already open and needs Accessibility permission to move windows. Everything is stored on your Mac.</p>
+          <p class="links"><a href="https://github.com/Jotharsh/Tether/releases/latest" rel="noopener">Download for Mac</a><a href="https://github.com/Jotharsh/Tether" rel="noopener">Source</a></p></div>
+        <div class="imgs"><img src="media/tether-room.jpg" alt="Tether's room detail: the Deep work room with 4 windows, 2 apps and a Restore room button" loading="lazy" width="840" height="524"><img src="media/cover-8.jpg" alt="" loading="lazy" width="420" height="746"></div>
+      </div></div>
+    </article>
+  </div>
+</section>
+
+<!-- ───────── numbers ───────── -->
+<section class="numbers" id="numbers">
+  <div class="sec-h"><span class="ix">[03]</span><span class="t">Numbers</span></div>
+  <ul class="figs">
+    <li data-r><span class="big" data-count="8">8</span><p class="cap">Apps</p><p class="sub">For the Mac, for Windows and for the web.</p></li>
+    <li data-r><span class="big" data-count="9">9</span><p class="cap">Days</p><p class="sub">Since the first one. All free and open source.</p></li>
+    <li data-r><span class="big" data-count="0">0</span><p class="cap">Accounts</p><p class="sub">Nothing is sent to me; it all stays on your device.</p></li>
+  </ul>
+</section>
+
+<!-- ───────── shipped ───────── -->
+<section class="logs" id="log">
+  <div class="sec-h"><span class="ix">[04]</span><span class="t">Shipped</span></div>
+  <h2 class="five" data-r>Nine days,<br>eight apps.</h2>
+  <ol class="shipped" aria-label="The eight builds and the date each was first committed">
+    <li data-r><span class="d">21.10</span><span class="n">LumaBar</span><span class="k">Mac</span></li>
+    <li data-r><span class="d">22.10</span><span class="n">SiteSnap</span><span class="k">Web</span></li>
+    <li data-r><span class="d">23.10</span><span class="n">Brink</span><span class="k">Mac</span></li>
+    <li data-r><span class="d">23.10</span><span class="n">Joinbar</span><span class="k">Windows</span></li>
+    <li data-r><span class="d">25.10</span><span class="n">Tapeshot</span><span class="k">Web</span></li>
+    <li data-r><span class="d">25.10</span><span class="n">Jukeroom</span><span class="k">Web</span></li>
+    <li data-r><span class="d">25.10</span><span class="n">Hushwords</span><span class="k">Web</span></li>
+    <li data-r><span class="d">29.10</span><span class="n">Tether</span><span class="k">Mac</span></li>
+  </ol>
+</section>
+
+<!-- ───────── next ───────── -->
+<section class="next" id="next">
+  <div class="sec-h"><span class="ix">[05]</span><span class="t">Contact</span></div>
+  <a class="ask" href="https://instagram.com/dailytech.build" rel="noopener" data-r><span>What should I build next?</span><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18L18 6M8 6h10v10"/></svg></a>
+  <ul class="foot">
+    <li><a href="https://instagram.com/dailytech.build" rel="noopener">Instagram</a></li>
+    <li><a href="https://github.com/Jotharsh" rel="noopener">GitHub</a></li>
+    <li><span>One small app, every day.</span></li>
+  </ul>
+</section>
+</main>
+
+<div class="peek" id="peek" aria-hidden="true"><img alt="" src=""></div>
+</body>
+</html>

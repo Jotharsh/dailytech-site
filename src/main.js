@@ -46,7 +46,7 @@ document.fonts.ready.then(fit); fit(); addEventListener('resize', fit)
 
 /* ───────── the ribbon: capsules on a curve, twisting ───────── */
 const ribbon = $('#ribbon')
-const IMAGES = ['sitesnap-visit', 'jukeroom-room', 'tapeshot-measure', 'lumabar', 'joinbar-popup', 'sitesnap-report', 'tapeshot-grid', 'jukeroom-second', 'hushwords-win', 'hushwords-spy', 'brink-poster']
+const IMAGES = ['tether-room', 'sitesnap-visit', 'jukeroom-room', 'tapeshot-measure', 'lumabar', 'joinbar-popup', 'sitesnap-report', 'tapeshot-grid', 'jukeroom-second', 'hushwords-win', 'hushwords-spy', 'brink-poster']
 let tiles = [], W = 0, H = 0, tw = 0, th = 0
 function build() {
   const r = ribbon.getBoundingClientRect(); W = r.width; H = r.height
